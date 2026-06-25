@@ -23,6 +23,55 @@
         .axis-modal img { max-width: 95vw; max-height: 95vh; border-radius: 6px; box-shadow: 0 4px 30px rgba(0,0,0,0.5); }
         .axis-modal-close { position: absolute; top: 16px; right: 28px; color: #fff; font-size: 36px; cursor: pointer; user-select: none; }
         .axis-modal-close:hover { color: #ccc; }
+
+        /* ===== 移动端适配 ===== */
+        @media screen and (max-width: 768px) {
+            body { padding: 6px; }
+            h1 { font-size: 17px; margin-bottom: 10px; }
+            h2 { font-size: 14px; }
+            .container { max-width: 100%; }
+
+            table {
+                font-size: 12px;
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            th, td {
+                padding: 6px 6px;
+                white-space: normal;
+                word-break: break-word;
+                line-height: 1.55;
+                vertical-align: top;
+            }
+
+            th {
+                white-space: nowrap;
+                font-size: 11px;
+                padding: 5px 6px;
+                background: #eee;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+
+            td[rowspan] { vertical-align: middle; }
+
+            details[open] { margin-bottom: 6px !important; }
+            summary {
+                font-size: 13px !important;
+                padding: 7px 10px !important;
+                line-height: 1.6;
+            }
+            .axis-icon { font-size: 24px; padding: 6px 8px; }
+            .axis-modal-close { top: 6px; right: 14px; font-size: 28px; }
+            .axis-modal img { max-width: 98vw; max-height: 90vh; }
+
+            /* 汇总统计表单独处理 */
+            details > table { font-size: 11px; }
+            details > table th, details > table td { padding: 5px 5px; }
+        }
     </style>
 </head>
 <body>
