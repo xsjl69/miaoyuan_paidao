@@ -23,6 +23,31 @@
         .axis-modal img { max-width: 95vw; max-height: 95vh; border-radius: 6px; box-shadow: 0 4px 30px rgba(0,0,0,0.5); }
         .axis-modal-close { position: absolute; top: 16px; right: 28px; color: #fff; font-size: 36px; cursor: pointer; user-select: none; }
         .axis-modal-close:hover { color: #ccc; }
+        .highlight-row { background: #fff9c4 !important; transition: background 0.5s; }
+        .highlight-row td { background: #fff9c4 !important; }
+        .highlight-row { background: #fff9c4 !important; transition: background 0.5s; }
+        .highlight-row td { background: #fff9c4 !important; }
+
+        /* ===== 浮动导航 ===== */
+        .float-nav { position: fixed; right: 12px; bottom: 60px; z-index: 9998; }
+        .float-nav-toggle { width: 44px; height: 44px; border-radius: 50%; background: #1565C0; color: #fff; font-size: 20px; border: none; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+        .float-nav-toggle:hover { background: #0D47A1; transform: scale(1.08); }
+        .float-nav-toggle:active { transform: scale(0.95); }
+        .float-nav-panel { display: none; position: absolute; right: 0; bottom: 52px; background: #fff; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.18); padding: 8px 0; min-width: 140px; }
+        .float-nav-panel.open { display: block; }
+        .float-nav-panel a { display: block; padding: 10px 16px; font-size: 13px; color: #333; text-decoration: none; white-space: nowrap; transition: background 0.15s; }
+        .float-nav-panel a:hover { background: #f0f4ff; color: #1565C0; }
+        .float-nav-panel a .nav-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+        .float-nav-backdrop { display: none; position: fixed; inset: 0; z-index: 9997; }
+        .float-nav-backdrop.open { display: block; }
+
+        /* 移动端导航调整 */
+        @media screen and (max-width: 768px) {
+            .float-nav { right: 8px; bottom: 40px; }
+            .float-nav-toggle { width: 42px; height: 42px; font-size: 18px; }
+            .float-nav-panel { bottom: 50px; min-width: 130px; }
+            .float-nav-panel a { padding: 11px 14px; font-size: 14px; }
+        }
 
         /* ===== 移动端适配 ===== */
         @media screen and (max-width: 768px) {
@@ -77,9 +102,9 @@
 <body>
     <div class="container">
 <h1>S76双子座202606喵园首日排刀表 - v1</h1>
-                        <div style="background:#f8f9fa; border:1px solid #ddd; border-radius:8px; padding:16px; margin-bottom:20px;">
+                        <div id="summary" style="background:#f8f9fa; border:1px solid #ddd; border-radius:8px; padding:16px; margin-bottom:20px;">
         <h2 style="text-align:center; margin-bottom:14px; color:#333; font-size:18px;">全表阵容统计汇总</h2>
-        <details open style="margin-bottom:12px;">
+        <details id="sec-b" style="margin-bottom:12px;">
             <summary style="cursor:pointer; font-size:15px; font-weight:bold; padding:8px 12px; background:#e3f2fd; border-radius:6px; color:#1565C0; user-select:none;">B区 — 共30刀</summary>
 <table style="width:100%; border-collapse:collapse; font-size:13px; margin-top:8px;">
 <thead><tr><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:8%;">刀型编号</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:6%;">刀数</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:left; width:38%;">阵容描述</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频链接</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频来源</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:20%;">轴图</th></tr></thead>
@@ -96,7 +121,7 @@
 </tbody>
 </table>
         </details>
-        <details open style="margin-bottom:12px;">
+        <details id="sec-c" style="margin-bottom:12px;">
             <summary style="cursor:pointer; font-size:15px; font-weight:bold; padding:8px 12px; background:#e8f5e9; border-radius:6px; color:#2E7D32; user-select:none;">C区 — 共80刀</summary>
 <table style="width:100%; border-collapse:collapse; font-size:13px; margin-top:8px;">
 <thead><tr><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:8%;">刀型编号</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:6%;">刀数</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:left; width:38%;">阵容描述</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频链接</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频来源</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:20%;">轴图</th></tr></thead>
@@ -117,7 +142,7 @@
 </tbody>
 </table>
         </details>
-        <details open style="margin-bottom:12px;">
+        <details id="sec-d" style="margin-bottom:12px;">
             <summary style="cursor:pointer; font-size:15px; font-weight:bold; padding:8px 12px; background:#fdecea; border-radius:6px; color:#b71c1c; user-select:none;">D区 — 共70刀</summary>
 <table style="width:100%; border-collapse:collapse; font-size:13px; margin-top:8px;">
 <thead><tr><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:8%;">刀型编号</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:6%;">刀数</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:left; width:38%;">阵容描述</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频链接</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频来源</th><th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:20%;">轴图</th></tr></thead>
@@ -136,6 +161,44 @@
         <div style="text-align:center; font-size:15px; font-weight:bold; padding:8px; background:#f5f5f5; border-radius:6px; color:#333;">全表合计：180刀（B区30 + C区80 + D区70）</div>
     </div>
 
+    <div id="userJump" style="text-align:center; padding:6px 0 4px 0;">
+        <label for="userSelect" style="font-size:14px; font-weight:bold; color:#333; margin-right:8px;">快速跳转用户：</label>
+        <select id="userSelect" style="font-size:14px; padding:6px 12px; border:1px solid #bbb; border-radius:6px; background:#fff; cursor:pointer; max-width:220px;" onchange="jumpToUser(this.value)">
+            <option value="">-- 选择用户 --</option>
+            <option value="user-1">水月陵</option>
+            <option value="user-2">炫斩星空</option>
+            <option value="user-3">歪歪 双场老6已建群</option>
+            <option value="user-4">布丁可爱捏</option>
+            <option value="user-5">聪明猫猫贴狼宝</option>
+            <option value="user-6">伯言之颜 占3</option>
+            <option value="user-7">田玉树</option>
+            <option value="user-8">晴菏</option>
+            <option value="user-9">小触</option>
+            <option value="user-10">优衣的小窝挖</option>
+            <option value="user-11">你一定在逗我</option>
+            <option value="user-12">星空可睹丶</option>
+            <option value="user-13">莉姆露酱</option>
+            <option value="user-14">波拉利斯</option>
+            <option value="user-15">赏膳罚饿使</option>
+            <option value="user-16">悲催</option>
+            <option value="user-17">夙夙：棣！子！</option>
+            <option value="user-18">雾岛薰香</option>
+            <option value="user-19">流云易水</option>
+            <option value="user-20">rainyNight</option>
+            <option value="user-21">为什么这样子</option>
+            <option value="user-22">潘达</option>
+            <option value="user-23">西红柿煮鸡蛋</option>
+            <option value="user-24">一刀羞萝</option>
+            <option value="user-25">fou</option>
+            <option value="user-26">雾雨魔理哀</option>
+            <option value="user-27">东方君</option>
+            <option value="user-28">烟花</option>
+            <option value="user-29">无声铃鹿</option>
+            <option value="user-30">碎茶</option>
+        </select>
+    </div>
+
+<div id="ranking">
         <table>
             <thead>
                 <tr>
@@ -148,7 +211,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr style="font-weight:bold">
+                <tr id="user-1" style="font-weight:bold">
                     <td rowspan="2">1</td>
                     <td rowspan="2"><b>水月陵</b></td>
                     <td rowspan="2">331</td>
@@ -161,7 +224,7 @@
                     <td>D3 手动 31000w+</td>
                     <td>D2 剑圣 若菜 蝶妈 栞 菲欧 手动 31000w+</td>
                 </tr>
-                <tr>
+                <tr id="user-2">
                     <td rowspan="2">2</td>
                     <td rowspan="2">炫斩星空</td>
                     <td rowspan="2">329</td>
@@ -174,7 +237,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-3">
                     <td rowspan="2">3</td>
                     <td rowspan="2">歪歪 双场老6已建群</td>
                     <td rowspan="2">328</td>
@@ -187,7 +250,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-4">
                     <td rowspan="2">4</td>
                     <td rowspan="2">布丁可爱捏</td>
                     <td rowspan="2">326</td>
@@ -200,7 +263,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-5">
                     <td rowspan="2">5</td>
                     <td rowspan="2">聪明猫猫贴狼宝</td>
                     <td rowspan="2">326</td>
@@ -213,7 +276,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr style="font-weight:bold">
+                <tr id="user-6" style="font-weight:bold">
                     <td rowspan="2">6</td>
                     <td rowspan="2"><b>伯言之颜 占3</b></td>
                     <td rowspan="2">326</td>
@@ -226,7 +289,7 @@
                     <td>D3 手动 31000w+</td>
                     <td>D2 剑圣 若菜 蝶妈 栞 菲欧 手动 31000w+</td>
                 </tr>
-                <tr>
+                <tr id="user-7">
                     <td rowspan="2">7</td>
                     <td rowspan="2">田玉树</td>
                     <td rowspan="2">325</td>
@@ -239,7 +302,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-8">
                     <td rowspan="2">8</td>
                     <td rowspan="2">晴菏</td>
                     <td rowspan="2">324</td>
@@ -252,7 +315,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr style="font-weight:bold">
+                <tr id="user-9" style="font-weight:bold">
                     <td rowspan="2">9</td>
                     <td rowspan="2"><b>小触</b></td>
                     <td rowspan="2">318</td>
@@ -265,7 +328,7 @@
                     <td>D3 手动 31000w+</td>
                     <td>D2 剑圣 若菜 蝶妈 栞 菲欧 手动 31000w+</td>
                 </tr>
-                <tr style="font-weight:bold">
+                <tr id="user-10" style="font-weight:bold">
                     <td rowspan="2">10</td>
                     <td rowspan="2"><b>优衣的小窝挖</b></td>
                     <td rowspan="2">317</td>
@@ -278,7 +341,7 @@
                     <td>D3 手动 31000w+</td>
                     <td>D2 剑圣 若菜 蝶妈 栞 菲欧 手动 31000w+</td>
                 </tr>
-                <tr>
+                <tr id="user-11">
                     <td rowspan="2">11</td>
                     <td rowspan="2">你一定在逗我</td>
                     <td rowspan="2">315</td>
@@ -291,7 +354,7 @@
                     <td>D1 紫罗兰 水龙 原花 兰法 els 0.5押30120w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-12">
                     <td rowspan="2">12</td>
                     <td rowspan="2">星空可睹丶</td>
                     <td rowspan="2">314</td>
@@ -304,7 +367,7 @@
                     <td>D1 紫罗兰 水龙 原花 兰法 els 0.5押30120w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-13">
                     <td rowspan="2">13</td>
                     <td rowspan="2">莉姆露酱</td>
                     <td rowspan="2">314</td>
@@ -317,7 +380,7 @@
                     <td>D1 紫罗兰 水龙 原花 兰法 els 0.5押30120w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-14">
                     <td rowspan="2">14</td>
                     <td rowspan="2">波拉利斯</td>
                     <td rowspan="2">313</td>
@@ -330,7 +393,7 @@
                     <td>D1 紫罗兰 水龙 原花 兰法 els 0.5押30120w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-15">
                     <td rowspan="2">15</td>
                     <td rowspan="2">赏膳罚饿使</td>
                     <td rowspan="2">312</td>
@@ -343,7 +406,7 @@
                     <td>D1 紫罗兰 水龙 原花 兰法 els 0.5押30120w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-16">
                     <td rowspan="2">16</td>
                     <td rowspan="2">悲催</td>
                     <td rowspan="2">312</td>
@@ -356,7 +419,7 @@
                     <td>D1 紫罗兰 水龙 原花 兰法 els 0.5押30120w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-17">
                     <td rowspan="2">17</td>
                     <td rowspan="2">夙夙：棣！子！</td>
                     <td rowspan="2">311</td>
@@ -369,7 +432,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-18">
                     <td rowspan="2">18</td>
                     <td rowspan="2">雾岛薰香</td>
                     <td rowspan="2">311</td>
@@ -382,7 +445,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-19">
                     <td rowspan="2">19</td>
                     <td rowspan="2">流云易水</td>
                     <td rowspan="2">310</td>
@@ -395,7 +458,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-20">
                     <td rowspan="2">20</td>
                     <td rowspan="2">rainyNight</td>
                     <td rowspan="2">310</td>
@@ -408,7 +471,7 @@
                     <td>D4 水田 苑 水晶 炼金望 sms 0押35000w</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-21">
                     <td rowspan="2">21</td>
                     <td rowspan="2">为什么这样子</td>
                     <td rowspan="2">314</td>
@@ -421,7 +484,7 @@
                     <td>C3 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-22">
                     <td rowspan="2">22</td>
                     <td rowspan="2">潘达</td>
                     <td rowspan="2">313</td>
@@ -434,7 +497,7 @@
                     <td>C3 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D5 水切 吹雪 情姐 凤凰 涅妃 0押28416w</td>
                 </tr>
-                <tr>
+                <tr id="user-23">
                     <td rowspan="2">23</td>
                     <td rowspan="2">西红柿煮鸡蛋</td>
                     <td rowspan="2">312</td>
@@ -447,7 +510,7 @@
                     <td>C3 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-24">
                     <td rowspan="2">24</td>
                     <td rowspan="2">一刀羞萝</td>
                     <td rowspan="2">312</td>
@@ -460,7 +523,7 @@
                     <td>C3 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-25">
                     <td rowspan="2">25</td>
                     <td rowspan="2">fou</td>
                     <td rowspan="2">309</td>
@@ -473,7 +536,7 @@
                     <td>C3 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-26">
                     <td rowspan="2">26</td>
                     <td rowspan="2">雾雨魔理哀</td>
                     <td rowspan="2">307</td>
@@ -486,7 +549,7 @@
                     <td>C5 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-27">
                     <td rowspan="2">27</td>
                     <td rowspan="2">东方君</td>
                     <td rowspan="2">307</td>
@@ -499,7 +562,7 @@
                     <td>C5 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-28">
                     <td rowspan="2">28</td>
                     <td rowspan="2">烟花</td>
                     <td rowspan="2">305</td>
@@ -512,7 +575,7 @@
                     <td>C5 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-29">
                     <td rowspan="2">29</td>
                     <td rowspan="2">无声铃鹿</td>
                     <td rowspan="2">299</td>
@@ -525,7 +588,7 @@
                     <td>C5 魔姬 龙妈 白猫 原花 els 返57+</td>
                     <td>D3 情姐 斑比 火机 圣莱 色鹿 0.5押29680w</td>
                 </tr>
-                <tr>
+                <tr id="user-30">
                     <td rowspan="2">30</td>
                     <td rowspan="2">碎茶</td>
                     <td rowspan="2">284</td>
@@ -540,6 +603,7 @@
                 </tr>
             </tbody>
         </table>
+</div>
     </div>
 
     <div class="axis-modal" id="axisModal" onclick="closeAxisModal()">
@@ -547,6 +611,43 @@
         <img id="axisModalImg" src="" alt="轴图" onclick="event.stopPropagation()">
     </div>
     <script>
+
+        function jumpToUser(userId) {
+            if (!userId) return;
+            // 清除旧高亮
+            document.querySelectorAll('.highlight-row').forEach(function(el) {
+                el.classList.remove('highlight-row');
+            });
+            var row = document.getElementById(userId);
+            if (row) {
+                row.classList.add('highlight-row');
+                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // 3秒后自动取消高亮
+                setTimeout(function() { row.classList.remove('highlight-row'); }, 2500);
+            }
+        }
+        function jumpToUser(userId) {
+            if (!userId) return;
+            document.querySelectorAll('.highlight-row').forEach(function(el) {
+                el.classList.remove('highlight-row');
+            });
+            var row = document.getElementById(userId);
+            if (row) {
+                row.classList.add('highlight-row');
+                // 下一个兄弟 tr 是用户的第二行，也需要标黄
+                var next = row.nextElementSibling;
+                if (next && next.tagName === 'TR') {
+                    next.classList.add('highlight-row');
+                }
+                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(function() {
+                    row.classList.remove('highlight-row');
+                    if (next && next.tagName === 'TR') {
+                        next.classList.remove('highlight-row');
+                    }
+                }, 2500);
+            }
+        }
         function openAxisModal(el) {
             document.getElementById('axisModalImg').src = el.getAttribute('data-img');
             document.getElementById('axisModal').classList.add('active');
@@ -557,6 +658,28 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') closeAxisModal();
         });
+    </script>
+    <div class="float-nav">
+        <button class="float-nav-toggle" id="navToggle" title="快速导航">☰</button>
+        <div class="float-nav-panel" id="navPanel">
+            <a href="#sec-b"><span class="nav-dot" style="background:#1565C0;"></span>B区 — 30刀</a>
+            <a href="#sec-c"><span class="nav-dot" style="background:#2E7D32;"></span>C区 — 80刀</a>
+            <a href="#sec-d"><span class="nav-dot" style="background:#b71c1c;"></span>D区 — 70刀</a>
+            <a href="#ranking"><span class="nav-dot" style="background:#e65100;"></span>排刀表</a>
+        </div>
+    </div>
+    <div class="float-nav-backdrop" id="navBackdrop"></div>
+    <script>
+        (function() {
+            var toggle = document.getElementById('navToggle');
+            var panel = document.getElementById('navPanel');
+            var backdrop = document.getElementById('navBackdrop');
+            function open() { panel.classList.add('open'); backdrop.classList.add('open'); }
+            function close() { panel.classList.remove('open'); backdrop.classList.remove('open'); }
+            toggle.addEventListener('click', function(e) { e.stopPropagation(); panel.classList.contains('open') ? close() : open(); });
+            backdrop.addEventListener('click', close);
+            panel.addEventListener('click', function(e) { if (e.target.tagName === 'A') close(); });
+        })();
     </script>
 </body>
 </html>
