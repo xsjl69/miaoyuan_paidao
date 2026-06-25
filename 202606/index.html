@@ -50,6 +50,18 @@
             .float-nav-panel a { padding: 11px 14px; font-size: 14px; }
         }
 
+        /* ===== 提示图标 ===== */
+        .tips-float { position: fixed; left: 12px; top: 12px; z-index: 9998; }
+        .tips-float-btn { width: 44px; height: 44px; border-radius: 50%; background: #e65100; color: #fff; font-size: 22px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
+        .tips-float-btn:hover { background: #bf360c; transform: scale(1.08); }
+        .tips-float-btn:active { transform: scale(0.95); }
+        .tips-overlay { display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,0.55); }
+        .tips-overlay.active { display: flex; align-items: center; justify-content: center; }
+        .tips-dialog { position: relative; background: rgba(255,255,255,0.92); border-radius: 12px; padding: 28px 24px 24px; max-width: 400px; width: 90%; box-shadow: 0 8px 32px rgba(0,0,0,0.3); text-align: center; }
+        .tips-dialog p { font-size: 15px; color: #333; line-height: 1.7; margin: 0; white-space: pre-line; text-align: left; }
+        .tips-dialog-close { position: absolute; top: 8px; right: 14px; font-size: 22px; color: #999; cursor: pointer; user-select: none; background: none; border: none; padding: 4px 8px; }
+        .tips-dialog-close:hover { color: #333; }
+
         /* ===== 移动端适配 ===== */
         @media screen and (max-width: 768px) {
             body { padding: 6px; }
@@ -144,6 +156,16 @@
         <div class="float-nav-panel" id="navPanel"></div>
     </div>
     <div class="float-nav-backdrop" id="navBackdrop"></div>
+
+    <div class="tips-float">
+        <button class="tips-float-btn" id="tipsBtn" title="提示">!</button>
+    </div>
+    <div class="tips-overlay" id="tipsOverlay">
+        <div class="tips-dialog" onclick="event.stopPropagation()">
+            <button class="tips-dialog-close" id="tipsClose">&times;</button>
+            <p id="tipsText"></p>
+        </div>
+    </div>
 
     <script>
         // ==================== 数据加载与渲染 ====================
@@ -385,6 +407,16 @@
             toggle.addEventListener("click", function(e) { e.stopPropagation(); panel.classList.contains("open") ? close() : open(); });
             backdrop.addEventListener("click", close);
             panel.addEventListener("click", function(e) { if (e.target.tagName === "A") close(); });
+        })();
+
+        // ==================== 提示弹框交互 ====================
+        (function() {
+            var overlay = document.getElementById("tipsOverlay");
+            var tipsTextEl = document.getElementById("tipsText");
+            tipsTextEl.textContent = KNIFE_DATA.tips || "";
+            document.getElementById("tipsBtn").addEventListener("click", function() { overlay.classList.add("active"); });
+            document.getElementById("tipsClose").addEventListener("click", function() { overlay.classList.remove("active"); });
+            overlay.addEventListener("click", function() { overlay.classList.remove("active"); });
         })();
     </script>
 </body>
