@@ -114,6 +114,14 @@ var KNIFE_DATA = {
       "axis_image": "D1_轴图.png"
     },
     {
+      "id": "D1-X",
+      "zone": "D",
+      "description": "水菲 春二力 小小甜心 机菜 晶 3.8",
+      "video_url": "",
+      "video_source": "",
+      "axis_image": ""
+    },
+    {
       "id": "D2-A",
       "zone": "D",
       "description": "猫剑 格蕾丝 水切噜 鼠鼠 战病 4.6",
@@ -190,7 +198,7 @@ var KNIFE_DATA = {
         ],
         [
           "B4",
-          "D"
+          "D3"
         ]
       ],
       "bold": true
@@ -230,7 +238,7 @@ var KNIFE_DATA = {
         ],
         [
           "B4",
-          "D"
+          "D3"
         ]
       ],
       "bold": false
@@ -266,7 +274,7 @@ var KNIFE_DATA = {
         ],
         [
           "B4",
-          "D"
+          "D3"
         ],
         [
           "B5",
@@ -290,7 +298,7 @@ var KNIFE_DATA = {
         ],
         [
           "B4",
-          "D"
+          "D3"
         ]
       ],
       "bold": false
@@ -326,7 +334,7 @@ var KNIFE_DATA = {
         ],
         [
           "B4",
-          "D"
+          "D3"
         ],
         [
           "B5",
@@ -346,7 +354,7 @@ var KNIFE_DATA = {
         ],
         [
           "B4",
-          "D"
+          "D3"
         ],
         [
           "B5",
@@ -362,11 +370,11 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D1-X"
         ],
         [
           "C2-A",
-          "D"
+          "D2-A"
         ],
         [
           "C3-B",
@@ -386,7 +394,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D2-A"
         ],
         [
           "C3-B",
@@ -406,7 +414,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D2-A"
         ],
         [
           "C3-B",
@@ -426,7 +434,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D2-A"
         ],
         [
           "C4-A",
@@ -446,7 +454,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D2-A"
         ],
         [
           "C4-A",
@@ -462,11 +470,11 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D1-X"
         ],
         [
           "C3-A",
-          "D"
+          "D2-A"
         ],
         [
           "C3-B",
@@ -486,7 +494,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-A",
-          "D"
+          "D2-A"
         ],
         [
           "C3-B",
@@ -506,7 +514,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-A",
-          "D"
+          "D2-A"
         ],
         [
           "C4-A",
@@ -526,7 +534,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-A",
-          "D"
+          "D2-A"
         ],
         [
           "C4-A",
@@ -542,11 +550,11 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D1-X"
         ],
         [
           "C3-A",
-          "D"
+          "D2-A"
         ],
         [
           "C4-A",
@@ -570,7 +578,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -590,7 +598,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -610,7 +618,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -630,7 +638,7 @@ var KNIFE_DATA = {
         ],
         [
           "C2-A",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -650,7 +658,7 @@ var KNIFE_DATA = {
         ],
         [
           "C1",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -670,7 +678,7 @@ var KNIFE_DATA = {
         ],
         [
           "C1",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -690,7 +698,7 @@ var KNIFE_DATA = {
         ],
         [
           "C1",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -710,7 +718,7 @@ var KNIFE_DATA = {
         ],
         [
           "C1",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -730,7 +738,7 @@ var KNIFE_DATA = {
         ],
         [
           "C1",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
@@ -750,7 +758,7 @@ var KNIFE_DATA = {
         ],
         [
           "C1",
-          "D"
+          "D1"
         ]
       ],
       "bold": false
