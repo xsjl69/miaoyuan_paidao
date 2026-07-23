@@ -240,7 +240,7 @@
                         if (k.video_url) {
                             videoLink = '<a href="' + k.video_url + '" target="_blank" style="font-size:11px; color:#2196F3; text-decoration:none;">▶</a>';
                         }
-                        videoSource = k.video_source;
+                        if (k.video_source) { videoSource = k.video_source; }
                         if (k.axis_image) {
                             axisHtml = '<span class="axis-icon" onclick="openAxisModal(this)" data-img="' + k.axis_image + '">📷</span>';
                         }
