@@ -170,15 +170,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B1",
-          "D"
+          "D3"
         ],
         [
           "B2",
-          "D"
+          "D4"
         ],
         [
           "B3",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -190,11 +190,11 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B1",
-          "D"
+          "D4"
         ],
         [
           "B2",
-          "D"
+          "D5"
         ],
         [
           "B4",
@@ -210,15 +210,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B1",
-          "D"
+          "D3"
         ],
         [
           "B2",
-          "D"
+          "D4"
         ],
         [
           "B5",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -230,11 +230,11 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B1",
-          "D"
+          "D4"
         ],
         [
           "B3",
-          "D"
+          "D5"
         ],
         [
           "B4",
@@ -250,15 +250,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B1",
-          "D"
+          "D3"
         ],
         [
           "B3",
-          "D"
+          "D4"
         ],
         [
           "B5",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -270,7 +270,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B1",
-          "D"
+          "D4"
         ],
         [
           "B4",
@@ -278,7 +278,7 @@ var KNIFE_DATA = {
         ],
         [
           "B5",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -290,11 +290,11 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B2",
-          "D"
+          "D4"
         ],
         [
           "B3",
-          "D"
+          "D5"
         ],
         [
           "B4",
@@ -310,15 +310,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B2",
-          "D"
+          "D3"
         ],
         [
           "B3",
-          "D"
+          "D4"
         ],
         [
           "B5",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -330,7 +330,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B2",
-          "D"
+          "D4"
         ],
         [
           "B4",
@@ -338,7 +338,7 @@ var KNIFE_DATA = {
         ],
         [
           "B5",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -350,7 +350,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "B3",
-          "D"
+          "D4"
         ],
         [
           "B4",
@@ -358,7 +358,7 @@ var KNIFE_DATA = {
         ],
         [
           "B5",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -378,7 +378,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-B",
-          "D"
+          "D5"
         ]
       ],
       "bold": true
@@ -390,7 +390,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D3"
         ],
         [
           "C2-A",
@@ -398,7 +398,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-B",
-          "D"
+          "D4"
         ]
       ],
       "bold": false
@@ -410,7 +410,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D3"
         ],
         [
           "C2-A",
@@ -418,7 +418,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-B",
-          "D"
+          "D4"
         ]
       ],
       "bold": false
@@ -430,7 +430,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D3"
         ],
         [
           "C2-A",
@@ -438,7 +438,7 @@ var KNIFE_DATA = {
         ],
         [
           "C4-A",
-          "D"
+          "D4"
         ]
       ],
       "bold": false
@@ -450,7 +450,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D3"
         ],
         [
           "C2-A",
@@ -458,7 +458,7 @@ var KNIFE_DATA = {
         ],
         [
           "C4-A",
-          "D"
+          "D4"
         ]
       ],
       "bold": false
@@ -478,7 +478,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-B",
-          "D"
+          "D5"
         ]
       ],
       "bold": true
@@ -490,7 +490,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D4"
         ],
         [
           "C3-A",
@@ -498,7 +498,7 @@ var KNIFE_DATA = {
         ],
         [
           "C3-B",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -510,7 +510,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D4"
         ],
         [
           "C3-A",
@@ -518,7 +518,7 @@ var KNIFE_DATA = {
         ],
         [
           "C4-A",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -530,7 +530,7 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C1",
-          "D"
+          "D4"
         ],
         [
           "C3-A",
@@ -538,7 +538,7 @@ var KNIFE_DATA = {
         ],
         [
           "C4-A",
-          "D"
+          "D5"
         ]
       ],
       "bold": false
@@ -558,7 +558,7 @@ var KNIFE_DATA = {
         ],
         [
           "C4-A",
-          "D"
+          "D4"
         ]
       ],
       "bold": true
@@ -669,7 +669,7 @@ var KNIFE_DATA = {
       "level": 351,
       "knives": [
         [
-          "C2-A",
+          "C4-A",
           "C4-A"
         ],
         [
