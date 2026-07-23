@@ -50,9 +50,17 @@ var KNIFE_DATA = {
       "axis_image": ""
     },
     {
-      "id": "C2",
+      "id": "C2-A",
       "zone": "C",
       "description": "白望 战病 格蕾丝 病娇 狼 返90s",
+      "video_url": "",
+      "video_source": "",
+      "axis_image": ""
+    },
+    {
+      "id": "C2-B",
+      "zone": "C",
+      "description": "超吃 姬塔 机娘 晶 富婆 返57s+",
       "video_url": "",
       "video_source": "",
       "axis_image": ""
@@ -74,9 +82,17 @@ var KNIFE_DATA = {
       "axis_image": ""
     },
     {
-      "id": "C4",
+      "id": "C4-A",
       "zone": "C",
       "description": "小凤 白望 克 工猫 611 返90s XOOOO AUTO ON",
+      "video_url": "",
+      "video_source": "",
+      "axis_image": ""
+    },
+    {
+      "id": "C4-B",
+      "zone": "C",
+      "description": "超吃 姬塔 机娘 晶 富婆 返57s+",
       "video_url": "",
       "video_source": "",
       "axis_image": ""
@@ -301,7 +317,7 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
@@ -321,7 +337,7 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
@@ -341,7 +357,7 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
@@ -361,11 +377,11 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
-          "C4",
+          "C4-A",
           "D"
         ]
       ],
@@ -381,11 +397,11 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
-          "C4",
+          "C4-A",
           "D"
         ]
       ],
@@ -445,7 +461,7 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C4",
+          "C4-A",
           "D"
         ]
       ],
@@ -465,7 +481,7 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C4",
+          "C4-A",
           "D"
         ]
       ],
@@ -485,7 +501,7 @@ var KNIFE_DATA = {
           "D"
         ],
         [
-          "C4",
+          "C4-A",
           "D"
         ]
       ],
@@ -497,16 +513,16 @@ var KNIFE_DATA = {
       "level": 366,
       "knives": [
         [
-          null,
-          null
+          "C4-A",
+          "C3-B"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
-          null,
-          null
+          "C2-B",
+          "C4-B"
         ]
       ],
       "bold": false
@@ -517,16 +533,16 @@ var KNIFE_DATA = {
       "level": 363,
       "knives": [
         [
-          null,
-          null
+          "C4-A",
+          "C3-B"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
-          null,
-          null
+          "C2-B",
+          "C4-B"
         ]
       ],
       "bold": false
@@ -537,11 +553,11 @@ var KNIFE_DATA = {
       "level": 362,
       "knives": [
         [
-          null,
-          null
+          "C4-A",
+          "C3-B"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
@@ -557,11 +573,11 @@ var KNIFE_DATA = {
       "level": 360,
       "knives": [
         [
-          null,
-          null
+          "C4-A",
+          "C4-A"
         ],
         [
-          "C2",
+          "C2-A",
           "D"
         ],
         [
@@ -577,8 +593,8 @@ var KNIFE_DATA = {
       "level": 358,
       "knives": [
         [
-          null,
-          null
+          "C2-A",
+          "C3-A"
         ],
         [
           "C1",
@@ -597,8 +613,8 @@ var KNIFE_DATA = {
       "level": 351,
       "knives": [
         [
-          null,
-          null
+          "C2-A",
+          "C3-A"
         ],
         [
           "C1",
@@ -617,8 +633,8 @@ var KNIFE_DATA = {
       "level": 344,
       "knives": [
         [
-          null,
-          null
+          "C4-A",
+          "C3-A"
         ],
         [
           "C1",
@@ -637,8 +653,8 @@ var KNIFE_DATA = {
       "level": 343,
       "knives": [
         [
-          null,
-          null
+          "C2-A",
+          "C4-A"
         ],
         [
           "C1",
@@ -657,8 +673,8 @@ var KNIFE_DATA = {
       "level": 336,
       "knives": [
         [
-          null,
-          null
+          "C2-A",
+          "C4-A"
         ],
         [
           "C1",
@@ -677,8 +693,8 @@ var KNIFE_DATA = {
       "level": 323,
       "knives": [
         [
-          null,
-          null
+          "C2-A",
+          "C4-A"
         ],
         [
           "C1",
