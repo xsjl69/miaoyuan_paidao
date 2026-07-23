@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S76双子座202606喵园首日排刀表</title>
+    <title>S77狮子座202607喵园首日排刀表</title>
     <script src="data.js"></script>
 <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -114,7 +114,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>S76双子座202606喵园首日排刀表 - v1</h1>
+        <h1>S77狮子座202607喵园首日排刀表 - v1</h1>
 
         <div id="summary" style="background:#f8f9fa; border:1px solid #ddd; border-radius:8px; padding:16px; margin-bottom:20px;">
             <h2 style="text-align:center; margin-bottom:14px; color:#333; font-size:18px;">全表阵容统计汇总</h2>
@@ -222,7 +222,7 @@
                 Object.keys(numMap).sort().forEach(function(num) {
                     numMap[num].forEach(function(k) {
                         var count = knifeCount[k.id] || 0;
-                        if (count === 0) return;
+                        // 即使刀数为0也显示
                         zoneCount += count;
                         var desc = k.description;
 
@@ -279,7 +279,7 @@
         // ==================== 排名表渲染 ====================
         function renderRanking(data) {
             var knifeTypes = data.knife_types;
-            var users = data.users.slice().sort(function(a, b) { return a.rank - b.rank; });
+            var users = data.users.slice();
 
             // 构建 knife 查询字典
             var knifeDict = {};
@@ -290,7 +290,6 @@
                 return k ? kid + " " + k.description : kid;
             }
 
-            var boldRanks = {1: true, 6: true, 9: true, 10: true};
             var tbody = document.getElementById("rankingBody");
             var html = "";
 
@@ -299,7 +298,7 @@
                 var name = u.name;
                 var level = u.level;
                 var knives = u.knives;
-                var isBold = boldRanks[rank];
+                var isBold = u.bold;
                 var boldStyle = isBold ? ' style="font-weight:bold"' : "";
                 var rowId = "user-" + rank;
                 var displayName = isBold ? "<b>" + name + "</b>" : name;
@@ -326,7 +325,7 @@
 
         // ==================== 用户跳转选择框 ====================
         function renderUserSelect(data) {
-            var users = data.users.slice().sort(function(a, b) { return a.rank - b.rank; });
+            var users = data.users.slice();
             var select = document.getElementById("userSelect");
             users.forEach(function(u) {
                 var opt = document.createElement("option");
