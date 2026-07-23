@@ -96,9 +96,18 @@ var KNIFE_DATA = {
       "name": "流云易水",
       "level": 395,
       "knives": [
-        ["B1",null],
-        ["B2",null],
-        ["B3",null]
+        [
+          "B1",
+          "D"
+        ],
+        [
+          "B2",
+          "D"
+        ],
+        [
+          "B3",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -107,9 +116,18 @@ var KNIFE_DATA = {
       "name": "优衣的小窝挖",
       "level": 393,
       "knives": [
-        ["B1",null],
-        ["B2",null],
-        ["B4",null]
+        [
+          "B1",
+          "D"
+        ],
+        [
+          "B2",
+          "D"
+        ],
+        [
+          "B4",
+          "D"
+        ]
       ],
       "bold": true
     },
@@ -118,9 +136,18 @@ var KNIFE_DATA = {
       "name": "赏膳罚饿使",
       "level": 393,
       "knives": [
-        ["B1",null],
-        ["B2",null],
-        ["B5",null]
+        [
+          "B1",
+          "D"
+        ],
+        [
+          "B2",
+          "D"
+        ],
+        [
+          "B5",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -129,9 +156,18 @@ var KNIFE_DATA = {
       "name": "为什么这样子",
       "level": 388,
       "knives": [
-        ["B1",null],
-        ["B3",null],
-        ["B4",null]
+        [
+          "B1",
+          "D"
+        ],
+        [
+          "B3",
+          "D"
+        ],
+        [
+          "B4",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -140,9 +176,18 @@ var KNIFE_DATA = {
       "name": "波拉利斯",
       "level": 387,
       "knives": [
-        ["B1",null],
-        ["B3",null],
-        ["B5",null]
+        [
+          "B1",
+          "D"
+        ],
+        [
+          "B3",
+          "D"
+        ],
+        [
+          "B5",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -151,9 +196,18 @@ var KNIFE_DATA = {
       "name": "fou",
       "level": 385,
       "knives": [
-        ["B1",null],
-        ["B4",null],
-        ["B5",null]
+        [
+          "B1",
+          "D"
+        ],
+        [
+          "B4",
+          "D"
+        ],
+        [
+          "B5",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -162,9 +216,18 @@ var KNIFE_DATA = {
       "name": "悲催",
       "level": 380,
       "knives": [
-        ["B2",null],
-        ["B3",null],
-        ["B4",null]
+        [
+          "B2",
+          "D"
+        ],
+        [
+          "B3",
+          "D"
+        ],
+        [
+          "B4",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -173,9 +236,18 @@ var KNIFE_DATA = {
       "name": "西红柿煮鸡蛋",
       "level": 377,
       "knives": [
-        ["B2",null],
-        ["B3",null],
-        ["B5",null]
+        [
+          "B2",
+          "D"
+        ],
+        [
+          "B3",
+          "D"
+        ],
+        [
+          "B5",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -184,9 +256,18 @@ var KNIFE_DATA = {
       "name": "莉姆露酱",
       "level": 374,
       "knives": [
-        ["B2",null],
-        ["B4",null],
-        ["B5",null]
+        [
+          "B2",
+          "D"
+        ],
+        [
+          "B4",
+          "D"
+        ],
+        [
+          "B5",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -195,9 +276,18 @@ var KNIFE_DATA = {
       "name": "雾岛董香",
       "level": 372,
       "knives": [
-        ["B3",null],
-        ["B4",null],
-        ["B5",null]
+        [
+          "B3",
+          "D"
+        ],
+        [
+          "B4",
+          "D"
+        ],
+        [
+          "B5",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -206,9 +296,18 @@ var KNIFE_DATA = {
       "name": "水月陵",
       "level": 420,
       "knives": [
-        ["C1",null],
-        ["C2",null],
-        ["C3-B",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C3-B",
+          "D"
+        ]
       ],
       "bold": true
     },
@@ -217,9 +316,18 @@ var KNIFE_DATA = {
       "name": "炫斩星空",
       "level": 411,
       "knives": [
-        ["C1",null],
-        ["C2",null],
-        ["C3-B",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C3-B",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -228,9 +336,18 @@ var KNIFE_DATA = {
       "name": "歪歪",
       "level": 410,
       "knives": [
-        ["C1",null],
-        ["C2",null],
-        ["C3-B",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C3-B",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -239,9 +356,18 @@ var KNIFE_DATA = {
       "name": "晴荷",
       "level": 410,
       "knives": [
-        ["C1",null],
-        ["C2",null],
-        ["C4",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C4",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -250,9 +376,18 @@ var KNIFE_DATA = {
       "name": "你一定在逗我",
       "level": 407,
       "knives": [
-        ["C1",null],
-        ["C2",null],
-        ["C4",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C4",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -261,9 +396,18 @@ var KNIFE_DATA = {
       "name": "凤岚：梯！子！",
       "level": 404,
       "knives": [
-        ["C1",null],
-        ["C3-A",null],
-        ["C3-B",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C3-A",
+          "D"
+        ],
+        [
+          "C3-B",
+          "D"
+        ]
       ],
       "bold": true
     },
@@ -272,9 +416,18 @@ var KNIFE_DATA = {
       "name": "布丁可爱捏",
       "level": 402,
       "knives": [
-        ["C1",null],
-        ["C3-A",null],
-        ["C3-B",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C3-A",
+          "D"
+        ],
+        [
+          "C3-B",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -283,9 +436,18 @@ var KNIFE_DATA = {
       "name": "星空可睹丶",
       "level": 399,
       "knives": [
-        ["C1",null],
-        ["C3-A",null],
-        ["C4",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C3-A",
+          "D"
+        ],
+        [
+          "C4",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -294,9 +456,18 @@ var KNIFE_DATA = {
       "name": "田玉树",
       "level": 398,
       "knives": [
-        ["C1",null],
-        ["C3-A",null],
-        ["C4",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C3-A",
+          "D"
+        ],
+        [
+          "C4",
+          "D"
+        ]
       ],
       "bold": false
     },
@@ -305,9 +476,18 @@ var KNIFE_DATA = {
       "name": "小触",
       "level": 396,
       "knives": [
-        ["C1",null],
-        ["C3-A",null],
-        ["C4",null]
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C3-A",
+          "D"
+        ],
+        [
+          "C4",
+          "D"
+        ]
       ],
       "bold": true
     },
@@ -316,9 +496,18 @@ var KNIFE_DATA = {
       "name": "RainyNight",
       "level": 366,
       "knives": [
-        [null,null],
-        ["C2",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          null,
+          null
+        ]
       ],
       "bold": false
     },
@@ -327,9 +516,18 @@ var KNIFE_DATA = {
       "name": "聪明猫猫贴狼宝",
       "level": 363,
       "knives": [
-        [null,null],
-        ["C2",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          null,
+          null
+        ]
       ],
       "bold": false
     },
@@ -338,9 +536,18 @@ var KNIFE_DATA = {
       "name": "木同",
       "level": 362,
       "knives": [
-        [null,null],
-        ["C2",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -349,9 +556,18 @@ var KNIFE_DATA = {
       "name": "一刀羞梦",
       "level": 360,
       "knives": [
-        [null,null],
-        ["C2",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C2",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -360,9 +576,18 @@ var KNIFE_DATA = {
       "name": "东方君",
       "level": 358,
       "knives": [
-        [null,null],
-        ["C1",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -371,9 +596,18 @@ var KNIFE_DATA = {
       "name": "潘达",
       "level": 351,
       "knives": [
-        [null,null],
-        ["C1",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -382,9 +616,18 @@ var KNIFE_DATA = {
       "name": "无声铃鹿",
       "level": 344,
       "knives": [
-        [null,null],
-        ["C1",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -393,9 +636,18 @@ var KNIFE_DATA = {
       "name": "雾雨魔理哀",
       "level": 343,
       "knives": [
-        [null,null],
-        ["C1",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -404,9 +656,18 @@ var KNIFE_DATA = {
       "name": "豹毙",
       "level": 336,
       "knives": [
-        [null,null],
-        ["C1",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     },
@@ -415,9 +676,18 @@ var KNIFE_DATA = {
       "name": "碎茶",
       "level": 323,
       "knives": [
-        [null,null],
-        ["C1",null],
-        ["C5","C5"]
+        [
+          null,
+          null
+        ],
+        [
+          "C1",
+          "D"
+        ],
+        [
+          "C5",
+          "C5"
+        ]
       ],
       "bold": false
     }
