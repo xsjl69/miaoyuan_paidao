@@ -188,7 +188,8 @@
             // 统计每个刀型ID的出现次数
             var knifeCount = {};
             users.forEach(function(u) {
-                u.knives.forEach(function(kid) {
+                u.knives.forEach(function(k) {
+                    var kid = Array.isArray(k) ? k[0] : k;
                     knifeCount[kid] = (knifeCount[kid] || 0) + 1;
                 });
             });
@@ -285,9 +286,12 @@
             var knifeDict = {};
             knifeTypes.forEach(function(k) { knifeDict[k.id] = k; });
 
-            function knifeName(kid) {
-                var k = knifeDict[kid];
-                return k ? kid + " " + k.description : kid;
+            function knifeName(k) {
+                var kid = Array.isArray(k) ? k[0] : k;
+                var assignee = Array.isArray(k) ? k[1] : null;
+                var kk = knifeDict[kid];
+                var base = kk ? kid + " " + kk.description : kid;
+                return assignee ? base + " @ " + assignee : base;
             }
 
             var tbody = document.getElementById("rankingBody");
@@ -341,7 +345,8 @@
             var users = data.users;
             var knifeCount = {};
             users.forEach(function(u) {
-                u.knives.forEach(function(kid) {
+                u.knives.forEach(function(k) {
+                    var kid = Array.isArray(k) ? k[0] : k;
                     knifeCount[kid] = (knifeCount[kid] || 0) + 1;
                 });
             });
