@@ -185,12 +185,17 @@
             var knifeTypes = data.knife_types;
             var users = data.users;
 
-            // 统计每个刀型ID的出现次数
+            // 统计每个刀型ID的出现次数（每个pair的两个元素都计）
             var knifeCount = {};
             users.forEach(function(u) {
                 u.knives.forEach(function(k) {
-                    var kid = Array.isArray(k) ? k[0] : k;
-                    knifeCount[kid] = (knifeCount[kid] || 0) + 1;
+                    if (Array.isArray(k)) {
+                        k.forEach(function(kid) {
+                            if (kid) knifeCount[kid] = (knifeCount[kid] || 0) + 1;
+                        });
+                    } else if (k) {
+                        knifeCount[k] = (knifeCount[k] || 0) + 1;
+                    }
                 });
             });
 
@@ -233,8 +238,8 @@
 
                         if (k.video_url) {
                             videoLink = '<a href="' + k.video_url + '" target="_blank" style="font-size:11px; color:#2196F3; text-decoration:none;">▶</a>';
-                            videoSource = k.video_source;
                         }
+                        videoSource = k.video_source;
                         if (k.axis_image) {
                             axisHtml = '<span class="axis-icon" onclick="openAxisModal(this)" data-img="' + k.axis_image + '">📷</span>';
                         }
@@ -263,7 +268,7 @@
                     + '<th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:6%;">刀数</th>'
                     + '<th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:left; width:38%;">阵容描述</th>'
                     + '<th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频链接</th>'
-                    + '<th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">视频来源</th>'
+                    + '<th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center;">轴来源</th>'
                     + '<th style="background:#f0f0f0; padding:6px 8px; border:1px solid #ccc; text-align:center; width:20%;">轴图</th>'
                     + '</tr></thead>'
                     + '<tbody>' + rows + '</tbody>'
@@ -349,8 +354,13 @@
             var knifeCount = {};
             users.forEach(function(u) {
                 u.knives.forEach(function(k) {
-                    var kid = Array.isArray(k) ? k[0] : k;
-                    knifeCount[kid] = (knifeCount[kid] || 0) + 1;
+                    if (Array.isArray(k)) {
+                        k.forEach(function(kid) {
+                            if (kid) knifeCount[kid] = (knifeCount[kid] || 0) + 1;
+                        });
+                    } else if (k) {
+                        knifeCount[k] = (knifeCount[k] || 0) + 1;
+                    }
                 });
             });
 

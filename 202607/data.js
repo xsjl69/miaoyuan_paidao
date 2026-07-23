@@ -104,6 +104,54 @@ var KNIFE_DATA = {
       "video_url": "",
       "video_source": "",
       "axis_image": ""
+    },
+    {
+      "id": "D1",
+      "zone": "D",
+      "description": "水菲 春二力 小小甜心 机菜 晶 2.9-3.4",
+      "video_url": "",
+      "video_source": "Evexy",
+      "axis_image": "D1_轴图.png"
+    },
+    {
+      "id": "D2-A",
+      "zone": "D",
+      "description": "猫剑 格蕾丝 水切噜 鼠鼠 战病 4.6",
+      "video_url": "",
+      "video_source": "Evexy",
+      "axis_image": "D2-A_轴图.png"
+    },
+    {
+      "id": "D2-B",
+      "zone": "D",
+      "description": "猫剑 格蕾丝 水切噜 若菜 战病 3.4-3.8",
+      "video_url": "",
+      "video_source": "Evexy",
+      "axis_image": "D2-B_轴图.png"
+    },
+    {
+      "id": "D3",
+      "zone": "D",
+      "description": "els 白猫 原花 水多娜 紫罗兰 2.7-3.1",
+      "video_url": "",
+      "video_source": "Evexy",
+      "axis_image": "D3_轴图.png"
+    },
+    {
+      "id": "D4",
+      "zone": "D",
+      "description": "情姐 维尔姆 火机 圣莱 鹿妹 3.0-3.3",
+      "video_url": "",
+      "video_source": "Evexy",
+      "axis_image": "D4_轴图.png"
+    },
+    {
+      "id": "D5",
+      "zone": "D",
+      "description": "水吃 水兔 水流夏 水优妮 紫罗兰 3.0-3.4",
+      "video_url": "",
+      "video_source": "Evexy",
+      "axis_image": "D5_轴图.png"
     }
   ],
   "users": [
@@ -517,12 +565,12 @@ var KNIFE_DATA = {
           "C3-B"
         ],
         [
-          "C2-A",
-          "D"
-        ],
-        [
           "C2-B",
           "C4-B"
+        ],
+        [
+          "C2-A",
+          "D"
         ]
       ],
       "bold": false
@@ -537,12 +585,12 @@ var KNIFE_DATA = {
           "C3-B"
         ],
         [
-          "C2-A",
-          "D"
-        ],
-        [
           "C2-B",
           "C4-B"
+        ],
+        [
+          "C2-A",
+          "D"
         ]
       ],
       "bold": false
@@ -557,12 +605,12 @@ var KNIFE_DATA = {
           "C3-B"
         ],
         [
-          "C2-A",
-          "D"
-        ],
-        [
           "C5",
           "C5"
+        ],
+        [
+          "C2-A",
+          "D"
         ]
       ],
       "bold": false
@@ -577,12 +625,12 @@ var KNIFE_DATA = {
           "C4-A"
         ],
         [
-          "C2-A",
-          "D"
-        ],
-        [
           "C5",
           "C5"
+        ],
+        [
+          "C2-A",
+          "D"
         ]
       ],
       "bold": false
@@ -593,16 +641,16 @@ var KNIFE_DATA = {
       "level": 358,
       "knives": [
         [
-          "C2-A",
-          "C3-A"
-        ],
-        [
-          "C1",
-          "D"
+          "C4-A",
+          "C4-A"
         ],
         [
           "C5",
           "C5"
+        ],
+        [
+          "C1",
+          "D"
         ]
       ],
       "bold": false
@@ -614,15 +662,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C2-A",
-          "C3-A"
-        ],
-        [
-          "C1",
-          "D"
+          "C4-A"
         ],
         [
           "C5",
           "C5"
+        ],
+        [
+          "C1",
+          "D"
         ]
       ],
       "bold": false
@@ -633,16 +681,16 @@ var KNIFE_DATA = {
       "level": 344,
       "knives": [
         [
-          "C4-A",
+          "C2-A",
           "C3-A"
-        ],
-        [
-          "C1",
-          "D"
         ],
         [
           "C5",
           "C5"
+        ],
+        [
+          "C1",
+          "D"
         ]
       ],
       "bold": false
@@ -654,15 +702,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C2-A",
-          "C4-A"
-        ],
-        [
-          "C1",
-          "D"
+          "C3-A"
         ],
         [
           "C5",
           "C5"
+        ],
+        [
+          "C1",
+          "D"
         ]
       ],
       "bold": false
@@ -674,15 +722,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C2-A",
-          "C4-A"
-        ],
-        [
-          "C1",
-          "D"
+          "C3-A"
         ],
         [
           "C5",
           "C5"
+        ],
+        [
+          "C1",
+          "D"
         ]
       ],
       "bold": false
@@ -694,15 +742,15 @@ var KNIFE_DATA = {
       "knives": [
         [
           "C2-A",
-          "C4-A"
-        ],
-        [
-          "C1",
-          "D"
+          "C2-A"
         ],
         [
           "C5",
           "C5"
+        ],
+        [
+          "C1",
+          "D"
         ]
       ],
       "bold": false
