@@ -68,7 +68,7 @@ var KNIFE_DATA = {
     {
       "id": "C3-B",
       "zone": "C",
-      "description": "小凤 白望 克 工猫 611 返90s",
+      "description": "小凤 白望 克 工猫 611 返90s XOOOO AUTO ON",
       "video_url": "",
       "video_source": "",
       "axis_image": ""
@@ -76,7 +76,7 @@ var KNIFE_DATA = {
     {
       "id": "C4",
       "zone": "C",
-      "description": "小凤 白望 克 工猫 611 返90s",
+      "description": "小凤 白望 克 工猫 611 返90s XOOOO AUTO ON",
       "video_url": "",
       "video_source": "",
       "axis_image": ""
@@ -213,70 +213,110 @@ var KNIFE_DATA = {
       "rank": 1,
       "name": "水月陵",
       "level": 420,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C2",
+        "C3-B"
+      ],
       "bold": true
     },
     {
       "rank": 2,
       "name": "炫斩星空",
       "level": 411,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C2",
+        "C3-B"
+      ],
       "bold": false
     },
     {
       "rank": 3,
       "name": "歪歪",
       "level": 410,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C2",
+        "C3-B"
+      ],
       "bold": false
     },
     {
       "rank": 4,
       "name": "晴荷",
       "level": 410,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C2",
+        "C4"
+      ],
       "bold": false
     },
     {
       "rank": 5,
       "name": "你一定在逗我",
       "level": 407,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C2",
+        "C4"
+      ],
       "bold": false
     },
     {
       "rank": 6,
       "name": "凤岚：梯！子！",
       "level": 404,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C3-A",
+        "C3-B"
+      ],
       "bold": true
     },
     {
       "rank": 7,
       "name": "布丁可爱捏",
       "level": 402,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C3-A",
+        "C3-B"
+      ],
       "bold": false
     },
     {
       "rank": 8,
       "name": "星空可睹丶",
       "level": 399,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C3-A",
+        "C4"
+      ],
       "bold": false
     },
     {
       "rank": 9,
       "name": "田玉树",
       "level": 398,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C3-A",
+        "C4"
+      ],
       "bold": false
     },
     {
       "rank": 10,
       "name": "小触",
       "level": 396,
-      "knives": [],
+      "knives": [
+        "C1",
+        "C3-A",
+        "C4"
+      ],
       "bold": true
     },
     {
