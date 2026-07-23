@@ -60,7 +60,7 @@ var KNIFE_DATA = {
     {
       "id": "C3-A",
       "zone": "C",
-      "description": "小凤 白望 克 工猫 611 返90s",
+      "description": "白望 战病 格蕾丝 病娇 狼 返90s",
       "video_url": "",
       "video_source": "",
       "axis_image": ""
@@ -68,7 +68,7 @@ var KNIFE_DATA = {
     {
       "id": "C3-B",
       "zone": "C",
-      "description": "白望 战病 格蕾丝 病娇 狼 返90s",
+      "description": "小凤 白望 克 工猫 611 返90s",
       "video_url": "",
       "video_source": "",
       "axis_image": ""
@@ -80,6 +80,22 @@ var KNIFE_DATA = {
       "video_url": "",
       "video_source": "",
       "axis_image": ""
+    },
+    {
+      "id": "C5-A",
+      "zone": "C",
+      "description": "烧狐 水电 海二 水77 水吃 返90s",
+      "video_url": "",
+      "video_source": "",
+      "axis_image": ""
+    },
+    {
+      "id": "C5-B",
+      "zone": "C",
+      "description": "超吃 姬塔 机娘 晶 富婆 返57s+",
+      "video_url": "",
+      "video_source": "",
+      "axis_image": ""
     }
   ],
   "users": [
@@ -87,70 +103,110 @@ var KNIFE_DATA = {
       "rank": 11,
       "name": "流云易水",
       "level": 395,
-      "knives": [],
+      "knives": [
+        "B1",
+        "B2",
+        "B3"
+      ],
       "bold": false
     },
     {
       "rank": 12,
       "name": "优衣的小窝挖",
       "level": 393,
-      "knives": [],
+      "knives": [
+        "B1",
+        "B2",
+        "B4"
+      ],
       "bold": true
     },
     {
       "rank": 13,
       "name": "赏膳罚饿使",
       "level": 393,
-      "knives": [],
+      "knives": [
+        "B1",
+        "B2",
+        "B5"
+      ],
       "bold": false
     },
     {
       "rank": 14,
       "name": "为什么这样子",
       "level": 388,
-      "knives": [],
+      "knives": [
+        "B1",
+        "B3",
+        "B4"
+      ],
       "bold": false
     },
     {
       "rank": 15,
       "name": "波拉利斯",
       "level": 387,
-      "knives": [],
+      "knives": [
+        "B1",
+        "B3",
+        "B5"
+      ],
       "bold": false
     },
     {
       "rank": 16,
       "name": "fou",
       "level": 385,
-      "knives": [],
+      "knives": [
+        "B1",
+        "B4",
+        "B5"
+      ],
       "bold": false
     },
     {
       "rank": 17,
       "name": "悲催",
       "level": 380,
-      "knives": [],
+      "knives": [
+        "B2",
+        "B3",
+        "B4"
+      ],
       "bold": false
     },
     {
       "rank": 18,
       "name": "西红柿煮鸡蛋",
       "level": 377,
-      "knives": [],
+      "knives": [
+        "B2",
+        "B3",
+        "B5"
+      ],
       "bold": false
     },
     {
       "rank": 19,
       "name": "莉姆露酱",
       "level": 374,
-      "knives": [],
+      "knives": [
+        "B2",
+        "B4",
+        "B5"
+      ],
       "bold": false
     },
     {
       "rank": 20,
       "name": "雾岛董香",
       "level": 372,
-      "knives": [],
+      "knives": [
+        "B3",
+        "B4",
+        "B5"
+      ],
       "bold": false
     },
     {
@@ -227,70 +283,130 @@ var KNIFE_DATA = {
       "rank": 21,
       "name": "RainyNight",
       "level": 366,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 22,
       "name": "聪明猫猫贴狼宝",
       "level": 363,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 23,
       "name": "木同",
       "level": 362,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 24,
       "name": "一刀羞梦",
       "level": 360,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 25,
       "name": "东方君",
       "level": 358,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 26,
       "name": "潘达",
       "level": 351,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 27,
       "name": "无声铃鹿",
       "level": 344,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 28,
       "name": "雾雨魔理哀",
       "level": 343,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 29,
       "name": "豹毙",
       "level": 336,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     },
     {
       "rank": 30,
       "name": "碎茶",
       "level": 323,
-      "knives": [],
+      "knives": [
+        "C5-A",
+        "C5-B",
+        "C1",
+        "C5-A",
+        "C5-B"
+      ],
       "bold": false
     }
   ]
