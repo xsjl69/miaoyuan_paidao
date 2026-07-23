@@ -231,6 +231,7 @@
                         // 即使刀数为0也显示
                         zoneCount += count;
                         var desc = k.description;
+                        desc = desc.replace(/紫罗兰/g, '<span style="color:red">紫罗兰</span>').replace(/白望/g, '<span style="color:red">白望</span>');
 
                         var videoLink = "略";
                         var videoSource = "略";
@@ -294,7 +295,7 @@
             function renderCell(v) {
                 if (!v) return "";
                 var k = knifeDict[v];
-                return k ? v + " " + k.description : v;
+                return k ? v + " " + k.description.replace(/紫罗兰/g, '<span style="color:red">紫罗兰</span>').replace(/白望/g, '<span style="color:red">白望</span>') : v;
             }
 
             var tbody = document.getElementById("rankingBody");
